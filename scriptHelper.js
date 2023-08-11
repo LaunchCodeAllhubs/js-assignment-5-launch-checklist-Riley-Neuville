@@ -34,7 +34,6 @@ function validateInput(testInput) {
 
 function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
 let submissionStatus = true;
-console.log("Attempting to submit");
 if (validateInput(pilot) == "Empty" || validateInput(copilot) == "Empty" || validateInput(fuelLevel) == "Empty" || validateInput(cargoLevel) == "Empty"){
     submissionStatus = false
     window.alert("All fields are required in order to submit.")
